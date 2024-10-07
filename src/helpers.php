@@ -53,7 +53,7 @@ if ( !function_exists('field_name_to_id'))
         }
 
         $out = str_replace(['.', '[]', '[', ']'], ['_', '', '_', ''], $name);
-        return empty($suffix) ? $out : "${out}_${suffix}";
+        return empty($suffix) ? $out : "{$out}_{$suffix}";
     }
 }
 
